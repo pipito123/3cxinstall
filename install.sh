@@ -8,6 +8,7 @@ sudo apt-get install net-tools tshark mtr wireshark davfs2 cifs-utils net-tools 
 
 cd /home/omadmin/
 wget -o file https://github.com/febo01/3cxinstall/blob/master/Integration.zip
+apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
 
 echo "Install 3CX PBX"
 wget -O- http://downloads-global.3cx.com/downloads/3cxpbx/public.key | sudo apt-key add -
