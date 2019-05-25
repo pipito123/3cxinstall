@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo su
-
 echo "Updating system..."
 sudo apt update --yes
 
