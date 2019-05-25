@@ -15,9 +15,9 @@ wget "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 
-
 echo "Install 3CX PBX"
-wget -O- http://downloads-global.3cx.com/downloads/3cxpbx/public.key
-apt-key add -
+wget -O- http://downloads-global.3cx.com/downloads/3cxpbx/public.key | sudo apt-key add -
 echo "deb http://downloads-global.3cx.com/downloads/debian stretch main" | sudo tee /etc/apt/sources.list.d/3cxpbx.list
-sudo apt-get update
+sudo apt update
+sudo apt install net-tools dphys-swapfile
+sudo apt install 3cxpbx
