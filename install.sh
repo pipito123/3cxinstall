@@ -15,4 +15,4 @@ wget -O- http://downloads-global.3cx.com/downloads/3cxpbx/public.key | sudo apt-
 echo "deb http://downloads-global.3cx.com/downloads/debian stretch main" | sudo tee /etc/apt/sources.list.d/3cxpbx.list
 apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
 sudo apt install net-tools dphys-swapfile 
-sudo apt install 3cxpbx
+echo -e "y \c" | sudo apt install 3cxpbx
